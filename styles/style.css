@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  margin: 0;
+  padding: 0 20px;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  background-color: #ffe17f;
+  margin-top: 40px;
+}
+
+.header-content {
+  width: 1040px;
+  margin: 0 auto;
+  margin-top: -23px;
+}
+
+.header-logo {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.wrapper-user-menu {
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+  width: 517px;
+}
+
+.search-name {
+  position: relative;
+  z-index: 10;
+}
+
+.search-name::before {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icons/icon-search.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.search-name::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  display: none;
+  width: 358px;
+  height: 40px;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+
+  content: "";
+}
+
+.search-name:focus-within::after {
+  display: block;
+}
+
+.input-search {
+  box-sizing: border-box;
+  width: 357px;
+  padding: 8px 45px;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-right: none;
+  border-radius: 50px 0px 0px 50px;
+  outline: none;
+}
+
+.input-search:disabled {
+  opacity: 0.3;
+}
+
+.button-search {
+  box-sizing: border-box;
+  width: 160px;
+  padding: 8px 55px;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.button-search:hover {
+  color: #ffffff;
+
+  background-color: #000000;
+}
