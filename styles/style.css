@@ -245,6 +245,8 @@ body {
 .user-link {
   position: relative;
 
+  padding: 8px 0;
+
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -259,7 +261,7 @@ body {
 
 .link-enter::before {
   position: absolute;
-  top: 5px;
+  top: 13px;
   left: 0;
 
   width: 15px;
@@ -289,7 +291,7 @@ body {
 
 .link-compare::before {
   position: absolute;
-  top: 5px;
+  top: 13px;
   left: 0;
 
   width: 10px;
@@ -307,7 +309,7 @@ body {
 
 .link-basket::before {
   position: absolute;
-  top: 2px;
+  top: 10px;
   left: 15px;
 
   width: 16px;
@@ -321,7 +323,7 @@ body {
 
 .link-basket::after {
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
 
   display: flex;
@@ -356,6 +358,8 @@ body {
 
 .user-link:active {
   opacity: 0.3;
+
+  outline: none;
 }
 
 .navigation {
@@ -402,6 +406,8 @@ body {
 
 .link-catalog:active {
   opacity: 0.3;
+
+  outline: none;
 }
 
 .catalog-button {
@@ -449,13 +455,13 @@ body {
   opacity: 0;
 }
 
-.catalog:hover  .catalog-wrapper{
+.catalog:hover  .catalog-wrapper {
   display: block;
 }
 
 .catalog-wrapper {
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: -60px;
 
   display: none;
@@ -466,7 +472,7 @@ body {
 .catalog-menu-wrapper {
   display: flex;
   min-height: 147px;
-  padding: 33px 60px 0 60px;
+  padding: 14px 60px 0 60px;
 
   background-color: #ffe17f;
 }
@@ -528,7 +534,7 @@ body {
 }
 
 .navigation-link {
-  padding-bottom: 4px;
+  position: relative;
 
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -551,10 +557,25 @@ body {
 
 .navigation-link:active {
   opacity: 0.3;
+
+  outline: none;
 }
 
-.navigation-link-active {
-  border-bottom: 2px solid #000000;
+.navigation-link::before{
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+
+  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+
+  content: "";
+}
+
+.navigation-link-active::before {
+  display: block;
 }
 
 /* ПОПОВЕР */
@@ -699,6 +720,7 @@ body {
 
 .popover-button-open:active {
   color: rgba(0, 0, 0, 0.3);
+
   outline: none;
 }
 
