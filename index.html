@@ -33,9 +33,35 @@
                 <li class="submenu-item">
                   <a class="user-link link-compare" href="#">Сравнить</a>
                 </li>
-                <li class="submenu-item">
+                <li class="submenu-item basket-item">
                   <a class="user-link link-basket" href="#">Корзина</a>
-                  <span class="number-basket">2</span>
+                  <div class="popover popover-cart">
+                    <ul class="popover-list reset-list">
+                      <li class="popover-item">
+                        <a class="popover-link" href="#">
+                          <img class="popover-image" src="./images/content/product-1-small.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+                          <p class="popover-title">Любительская селфи-палка</p>
+                        </a>
+                        <button class="popover-button-delete" type="button">
+                          <span class="visually-hidden">Удалить товар из корзины.</span>
+                        </button>
+                        </li>
+                      <li class="popover-item">
+                        <a class="popover-link" href="#">
+                          <img class="popover-image" src="./images/content/product-2-small.jpg" width="39" height="43" alt="Профессиональная селфи-палка." >
+                          <p class="popover-title">Профессиональная селфи-палка</p>
+                          </a>
+                          <button class="popover-button-delete" type="button">
+                            <span class="visually-hidden">Удалить товар из корзины.</span>
+                          </button>
+                        </li>
+                    </ul>
+                    <div class="popover-total">
+                      <span class="number">Товаров: 2</span>
+                      <span class="price">Сумма: 2000 ₽</span>
+                    </div>
+                    <button class="popover-button-open">Открыть корзину</button>
+                  </div>
                 </li>
               </ul>
             </li>
@@ -95,7 +121,9 @@
     </header>
 
     <main class="main-content">
-      im main
+      <div class="container">
+        im main
+      </div>
     </main>
 
     <footer class="main-footer">
