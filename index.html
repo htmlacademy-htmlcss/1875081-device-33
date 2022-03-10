@@ -123,99 +123,161 @@
 
     <main class="main-content">
       <!-- SLIDER -->
-      <div class="slider-wrapper container">
-        <div class="slider-arrows">
-          <button class="slider-arrow slider-arrow-prev" type="button"><span class="visually-hidden">Предыдущий слайд.</span></button>
-          <button class="slider-arrow slider-arrow-next" type="button"><span class="visually-hidden">Следующий слайд.</span></button>
-        </div>
+      <section class="slider">
+        <h2 class="visually-hidden">Слайдер с продуктами магазина.</h2>
+        <div class="slider-wrapper container">
+          <div class="slider-arrows">
+            <button class="slider-arrow slider-arrow-prev" type="button"><span class="visually-hidden">Предыдущий слайд.</span></button>
+            <button class="slider-arrow slider-arrow-next" type="button"><span class="visually-hidden">Следующий слайд.</span></button>
+          </div>
 
-        <ol class="slider-list reset-list">
-          <li class="slider-item slider-item-one">
-            <div class="slider-image-wrapper">
-              <img class="slider-image" src="./images/content/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
-            </div>
-            <div class="slider-content-wrapper">
-              <span class="slider-number">01</span>
-              <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
-              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <div class="slider-control">
-                <a class="slider-link-button" href="#">Подробнее</a>
-                <div class="control-buttons">
-                  <button class="control-button control-button-current" type="button" aria-label="Первый слайд."></button>
-                  <button class="control-button" type="button" aria-label="Второй слайд."></button>
-                  <button class="control-button" type="button" aria-label="Третий слайд."></button>
+          <ol class="slider-list reset-list">
+            <li class="slider-item slider-item-one">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="./images/content/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
+              </div>
+              <div class="slider-content-wrapper">
+                <span class="slider-number">01</span>
+                <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+                <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <div class="slider-control">
+                  <a class="button slider-link-button" href="#">Подробнее</a>
+                  <div class="control-buttons">
+                    <button class="control-button control-button-current" type="button" aria-label="Первый слайд."></button>
+                    <button class="control-button" type="button" aria-label="Второй слайд."></button>
+                    <button class="control-button" type="button" aria-label="Третий слайд."></button>
+                  </div>
+                </div>
+                <div class="parameter">
+                  <dl class="parameter-wrapper">
+                    <dt>Дальность полета</dt>
+                    <dd>800 м</dd>
+                  </dl>
+                  <dl class="parameter-wrapper">
+                    <dt>Радиус поражения</dt>
+                    <dd>50 м</dd>
+                  </dl>
                 </div>
               </div>
-              <div class="parameter">
-                <dl class="parameter-wrapper">
-                  <dt>Дальность полета</dt>
-                  <dd>800 м</dd>
-                </dl>
-                <dl class="parameter-wrapper">
-                  <dt>Радиус поражения</dt>
-                  <dd>50 м</dd>
-                </dl>
+            </li>
+            <li class="slider-item slider-item-two">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="./images/content/slider-2.png" width="560" height="560" alt="Фитнес браслет.">
               </div>
-            </div>
-          </li>
-          <li class="slider-item slider-item-two">
-            <div class="slider-image-wrapper">
-              <img class="slider-image" src="./images/content/slider-2.png" width="560" height="560" alt="Фитнес браслет.">
-            </div>
-            <div class="slider-content-wrapper">
-              <span class="slider-number">02</span>
-              <h2 class="slider-title slider-title-fitness">Худеем правильно!</h2>
-              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <div class="slider-control">
-                <a class="slider-link-button" href="#">Подробнее</a>
-                <div class="control-buttons">
-                  <button class="control-button" type="button" aria-label="Первый слайд."></button>
-                  <button class="control-button control-button-current" type="button" aria-label="Второй слайд."></button>
-                  <button class="control-button" type="button" aria-label="Третий слайд."></button>
+              <div class="slider-content-wrapper">
+                <span class="slider-number">02</span>
+                <h3 class="slider-title slider-title-fitness">Худеем правильно!</h3>
+                <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <div class="slider-control">
+                  <a class="button slider-link-button" href="#">Подробнее</a>
+                  <div class="control-buttons">
+                    <button class="control-button" type="button" aria-label="Первый слайд."></button>
+                    <button class="control-button control-button-current" type="button" aria-label="Второй слайд."></button>
+                    <button class="control-button" type="button" aria-label="Третий слайд."></button>
+                  </div>
+                </div>
+                <div class="parameter">
+                  <dl class="parameter-wrapper">
+                    <dt>Без подзарядки</dt>
+                    <dd>48 часов</dd>
+                  </dl>
                 </div>
               </div>
-              <div class="parameter">
-                <dl class="parameter-wrapper">
-                  <dt>Без подзарядки</dt>
-                  <dd>48 часов</dd>
-                </dl>
+            </li>
+            <li class="slider-item slider-item-three">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="./images/content/slider-3.png" width="560" height="560" alt="Селфи-палка.">
               </div>
-            </div>
-          </li>
-          <li class="slider-item slider-item-three">
-            <div class="slider-image-wrapper">
-              <img class="slider-image" src="./images/content/slider-3.png" width="560" height="560" alt="Селфи-палка.">
-            </div>
-            <div class="slider-content-wrapper">
-              <span class="slider-number">03</span>
-              <h2 class="slider-title slider-title-self">Делай селфи, как Бен Стиллер! </h2>
-              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <div class="slider-control">
-                <a class="slider-link-button" href="#">Подробнее</a>
-                <div class="control-buttons">
-                  <button class="control-button" type="button" aria-label="Первый слайд."></button>
-                  <button class="control-button" type="button" aria-label="Второй слайд."></button>
-                  <button class="control-button control-button-current" type="button" aria-label="Третий слайд."></button>
+              <div class="slider-content-wrapper">
+                <span class="slider-number">03</span>
+                <h3 class="slider-title slider-title-self">Делай селфи, как Бен Стиллер! </h3>
+                <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                <div class="slider-control">
+                  <a class="button slider-link-button" href="#">Подробнее</a>
+                  <div class="control-buttons">
+                    <button class="control-button" type="button" aria-label="Первый слайд."></button>
+                    <button class="control-button" type="button" aria-label="Второй слайд."></button>
+                    <button class="control-button control-button-current" type="button" aria-label="Третий слайд."></button>
+                  </div>
+                </div>
+                <div class="parameter">
+                  <dl class="parameter-wrapper">
+                    <dt>Длина палки</dt>
+                    <dd>8,5 м</dd>
+                  </dl>
+                  <dl class="parameter-wrapper">
+                    <dt>Вес палки</dt>
+                    <dd>5 кг</dd>
+                  </dl>
+                  <dl class="parameter-wrapper">
+                    <dt>Материал</dt>
+                    <dd>Карбон</dd>
+                  </dl>
                 </div>
               </div>
-              <div class="parameter">
-                <dl class="parameter-wrapper">
-                  <dt>Длина палки</dt>
-                  <dd>8,5 м</dd>
-                </dl>
-                <dl class="parameter-wrapper">
-                  <dt>Вес палки</dt>
-                  <dd>5 кг</dd>
-                </dl>
-                <dl class="parameter-wrapper">
-                  <dt>Материал</dt>
-                  <dd>Карбон</dd>
-                </dl>
-              </div>
-            </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- CATEGORIES -->
+      <section class="categories container">
+        <h2 class="visually-hidden">Список категорий каталога.</h2>
+        <ul class="categories-list reset-list">
+          <li class="categories-item">
+            <a class="categories-link" href="#">
+              <div class="image-block block-vr"></div>
+              <h3 class="categories-title">Виртуальная реальность</h3>
+            </a>
           </li>
-        </ol>
-      </div>
+          <li class="categories-item">
+            <a class="categories-link" href="catalog.html">
+              <div class="image-block block-self"></div>
+              <h3 class="categories-title categories-title-self">Моноподы для селфи</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">
+              <div class="image-block block-action"></div>
+              <h3 class="categories-title">Экшн-камеры</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">
+              <div class="image-block block-fitness"></div>
+              <h3 class="categories-title">Фитнес-браслеты</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">
+              <div class="image-block block-watch"></div>
+              <h3 class="categories-title">Умные часы</h3>
+            </a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">
+              <div class="image-block block-quadro"></div>
+              <h3 class="categories-title">Квадрокоптеры</h3>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!--DELIVERY-->
+      <section class="delivery">
+        <h2 class="visually-hidden">Доставка товара.</h2>
+        <div class="delivery-content container">
+          <ul class="delivery-list reset-list">
+            <li class="delivery-item">
+              <button class="button delivery-button delivery-button-current" type="button">Доставка</button>
+            </li>
+            <li class="delivery-item">
+              <button class="button delivery-button" type="button">Гарантия</button>
+            </li>
+            <li class="delivery-item">
+              <button class="button delivery-button" type="button">Кредит</button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
