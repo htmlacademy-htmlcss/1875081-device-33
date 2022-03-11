@@ -809,8 +809,6 @@ body {
 }
 
 .main-title {
-  margin-bottom: 29px;
-
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -818,14 +816,20 @@ body {
   color: #000000;
 }
 
-.main-text {
-  margin-bottom: 51px;
+.slider-title {
+  margin-bottom: 29px;
+}
 
+.main-text {
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+}
+
+.slider-text {
+  margin-bottom: 51px;
 }
 
 .slider-control {
@@ -1096,7 +1100,7 @@ body {
 
 .advantages-content {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   margin-top: -103px;
   margin-bottom: 72px;
 }
@@ -1286,4 +1290,116 @@ body {
   opacity: 0.3;
 
   outline: none;
+}
+
+.info-block {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.about {
+  margin-right: 108px;
+}
+
+.info-title {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.info-text {
+  width: 497px;
+  margin-bottom: 30px;
+}
+
+.about,
+.contacts {
+  position: relative;
+
+  padding-right: 22px;
+}
+
+.about::before,
+.contacts::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 84px;
+  height: 7px;
+
+  background-color: #000000;
+
+  content: "";
+}
+
+.about-list {
+  margin-bottom: 30px;
+}
+
+.about-item {
+  position: relative;
+  padding-left: 35px;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.about-item::before {
+  position: absolute;
+  top: 6px;
+  left: 0;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #ffc700;
+  border-radius: 50%;
+
+  content: "";
+}
+
+.about-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.about-link {
+  display: inline-block;
+  padding: 9px 20px 9px 25px;
+}
+
+.adress-block {
+  width: 514px;
+}
+
+.subcontacts-title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-text {
+  margin: 0;
+}
+
+.contacts-tel {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  color: #444444;
+}
+
+.contacts-link {
+  display: inline-block;
+  padding: 9px 30px 9px 35px;
 }
