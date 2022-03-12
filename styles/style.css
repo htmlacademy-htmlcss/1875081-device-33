@@ -1010,7 +1010,7 @@ body {
   background-color: #ffcc33;
 }
 
-.categories-item:focus-within {
+.categories-item:focus-within{
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -1020,7 +1020,6 @@ body {
 
   outline: none;
 }
-
 
 .categories-link {
   color: #000000;
