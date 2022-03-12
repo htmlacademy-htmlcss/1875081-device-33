@@ -2375,7 +2375,7 @@ body {
 }
 
 .upload-link:hover {
-  opacity: 0.6;
+  border-color: #000000;
 }
 
 .upload-link:focus-within {
@@ -2385,6 +2385,7 @@ body {
 
 .upload-link:active {
   opacity: 0.3;
+  border-color: #e5e5e5;
 
   outline: none;
 }
