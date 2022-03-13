@@ -94,7 +94,7 @@ body {
 .header-logo:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .header-logo:focus-within {
@@ -210,7 +210,7 @@ body {
 
   background-color: #000000;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .button-search::before {
@@ -360,7 +360,7 @@ body {
 .user-link:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .user-link:focus-within {
@@ -415,7 +415,7 @@ body {
 .link-catalog:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .link-catalog:active {
@@ -464,7 +464,7 @@ body {
 .catalog:hover .catalog-button {
   opacity: 1;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .catalog:hover .catalog-button::before {
@@ -525,7 +525,7 @@ body {
 .catalog-link:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .catalog-link:focus-within {
@@ -569,7 +569,7 @@ body {
 .navigation-link:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .navigation-link:focus-within {
@@ -657,7 +657,7 @@ body {
 .popover-link:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .popover-link:focus-within {
@@ -695,7 +695,7 @@ body {
 .popover-button-delete:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .popover-button-delete:focus-within {
@@ -737,7 +737,7 @@ body {
 .popover-button-open:hover {
   background-color: #ffe17f;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .popover-button-open:focus-within {
@@ -796,7 +796,7 @@ body {
 .slider-arrow:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .slider-arrow:focus-within {
@@ -912,7 +912,7 @@ body {
   width: 100%;
   height: 100%;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .slider-link-button:focus {
@@ -965,7 +965,7 @@ body {
 .control-button:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .control-button:focus-within::before {
@@ -1056,7 +1056,7 @@ body {
 .categories-link:hover .image-block {
   background-color: #ffcc33;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .categories-link:focus-within{
@@ -1174,7 +1174,7 @@ body {
   width: 100%;
   height: 100%;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .advantages-button:focus-within {
@@ -1202,7 +1202,7 @@ body {
 .advantages-button-current:hover {
   color: rgba(255, 225, 127, 0.6);
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .advantages-button-current:active {
@@ -1325,19 +1325,19 @@ body {
 .order-link:hover::before {
   background-color: #ffc700;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .order-link:hover .info-order {
   background-color:  rgba(220, 220, 220, 1);
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .order-link:hover .info-order::before {
   opacity: 1;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .order-link:focus-within {
@@ -1438,7 +1438,7 @@ body {
   height: 100%;
 
   background-color: #ffe17f;
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .about-link:focus {
@@ -1480,6 +1480,8 @@ body {
 
 .contacts-tel:hover {
   opacity: 0.6;
+
+  transition-duration: 0.3s;
 }
 
 .contacts-tel:focus-within {
@@ -1507,7 +1509,7 @@ body {
 
   background-color: #ffe17f;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .contacts-link:focus {
@@ -1622,7 +1624,7 @@ body {
 .button-mailing:hover {
   background-color: #c4c4c4;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .button-mailing:focus {
@@ -1698,7 +1700,7 @@ body {
 .logo-footer:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .logo-footer:focus-within {
@@ -1769,7 +1771,7 @@ body {
 .footer-link:hover {
   color: #ffc700;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .footer-link:hover::before {
@@ -1810,7 +1812,7 @@ body {
 .social-link:hover {
   background-color: #ffc700;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .social-item:focus-within {
@@ -1850,7 +1852,7 @@ body {
 .footer-tel:hover {
   color: #ffc700;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .footer-tel:focus-within {
@@ -1871,7 +1873,7 @@ body {
 .footer-academy:hover {
   color: #ffffff;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .footer-academy:focus-within {
@@ -1944,7 +1946,7 @@ body {
 .breadcrumbs-link:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .breadcrumbs-link:focus-within {
@@ -2058,7 +2060,7 @@ body {
   background-color: #ebebeb;
   border: 2px solid #cccccc;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .range-toggle::before {
@@ -2239,7 +2241,7 @@ body {
 
   background-color: #ffe17f;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .filter-button:focus {
@@ -2289,7 +2291,7 @@ body {
 .sorting-select:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .sorting-select:focus-within {
@@ -2403,7 +2405,7 @@ body {
 .sorting-link:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .sorting-item:hover .detailed-link,
@@ -2473,7 +2475,7 @@ body {
 
   background-color: #ffe17f;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .detailed-link:focus-within {
@@ -2510,7 +2512,7 @@ body {
 .upload-link:hover {
   border-color: #000000;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .upload-link:focus-within {
@@ -2552,7 +2554,7 @@ body {
 .pagination-button:hover {
   background-color: #dcdcdc;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .pagination-button:focus-within {
@@ -2595,7 +2597,7 @@ body {
 .pagination-link:hover {
   color: rgba(68, 68, 68, 1);
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .pagination-link:focus-within {
@@ -2664,7 +2666,7 @@ body {
 .modal-close-button:hover {
   opacity: 0.6;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .modal-close-button:focus-within {
@@ -2758,7 +2760,7 @@ body {
 .modal-input:hover {
   background-color: #dcdcdc;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .modal-input:focus-within {
@@ -2846,7 +2848,7 @@ body {
 .number-button:hover {
   background-color: #ebebeb;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .number-button:hover::before {
@@ -2885,7 +2887,7 @@ body {
 
   background-color: #ffe17f;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .modal-button:focus {
@@ -2921,7 +2923,7 @@ body {
 .tooltip-toggle:hover {
   opacity: 0.8;
 
-  transition: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
