@@ -93,6 +93,8 @@ body {
 
 .header-logo:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .header-logo:focus-within {
@@ -207,6 +209,8 @@ body {
   color: #ffffff;
 
   background-color: #000000;
+
+  transition: 0.5s;
 }
 
 .button-search::before {
@@ -355,6 +359,8 @@ body {
 
 .user-link:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .user-link:focus-within {
@@ -408,6 +414,8 @@ body {
 
 .link-catalog:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .link-catalog:active {
@@ -455,6 +463,8 @@ body {
 
 .catalog:hover .catalog-button {
   opacity: 1;
+
+  transition: 0.5s;
 }
 
 .catalog:hover .catalog-button::before {
@@ -514,6 +524,8 @@ body {
 
 .catalog-link:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .catalog-link:focus-within {
@@ -556,6 +568,8 @@ body {
 
 .navigation-link:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .navigation-link:focus-within {
@@ -642,6 +656,8 @@ body {
 
 .popover-link:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .popover-link:focus-within {
@@ -678,6 +694,8 @@ body {
 
 .popover-button-delete:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .popover-button-delete:focus-within {
@@ -718,6 +736,8 @@ body {
 
 .popover-button-open:hover {
   background-color: #ffe17f;
+
+  transition: 0.5s;
 }
 
 .popover-button-open:focus-within {
@@ -775,6 +795,8 @@ body {
 
 .slider-arrow:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .slider-arrow:focus-within {
@@ -847,7 +869,7 @@ body {
 
 .button {
   position: relative;
-  /* z-index: 1; */
+  z-index: 1;
 
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -884,15 +906,20 @@ body {
   content: "";
 }
 
-.slider-link-button:hover {
-  background-color: #ffe17f;
+.slider-link-button:hover::before {
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transition: 0.5s;
 }
 
 .slider-link-button:focus {
   outline: 2px solid #af4fff;
 }
 
-.slider-link-button:active {
+.slider-link-button:active::before {
   background-color: #ffcc33;
 }
 
@@ -937,6 +964,8 @@ body {
 
 .control-button:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .control-button:focus-within::before {
@@ -1026,6 +1055,8 @@ body {
 
 .categories-link:hover .image-block {
   background-color: #ffcc33;
+
+  transition: 0.5s;
 }
 
 .categories-link:focus-within{
@@ -1118,9 +1149,6 @@ body {
 }
 
 .advantages-list {
-  position: relative;
-  z-index: 1;
-
   width: 280px;
 
   padding-top: 65px;
@@ -1140,6 +1168,24 @@ body {
   outline: none;
 }
 
+.advantages-button:hover::before {
+  top:0;
+
+  width: 100%;
+  height: 100%;
+
+  transition: 0.5s;
+}
+
+.advantages-button:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.advantages-button:active::before {
+  background-color: #ffcc33;
+}
+
 .advantages-button-current {
   width: 100%;
 
@@ -1149,21 +1195,17 @@ body {
   background-color: #000000;
 }
 
-.advantages-item:hover {
-  background-color: #000;
-  color: rgba(255, 225, 127, 0.5);
+.advantages-button-current::before {
+  display: none;
 }
 
-.advantages-item:hover .advantages-button {
-  color: rgba(255, 225, 127, 0.5);
+.advantages-button-current:hover {
+  color: rgba(255, 225, 127, 0.6);
+
+  transition: 0.5s;
 }
 
-.advantages-item:focus-within {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
-.advantages-item:active .advantages-button {
+.advantages-button-current:active {
   color: rgba(255, 225, 127, 0.3);
 
   outline: none;
@@ -1282,14 +1324,20 @@ body {
 
 .order-link:hover::before {
   background-color: #ffc700;
+
+  transition: 0.5s;
 }
 
 .order-link:hover .info-order {
   background-color:  rgba(220, 220, 220, 1);
+
+  transition: 0.5s;
 }
 
 .order-link:hover .info-order::before {
   opacity: 1;
+
+  transition: 0.5s;
 }
 
 .order-link:focus-within {
@@ -1379,18 +1427,25 @@ body {
 
 .about-link {
   display: inline-block;
+  z-index: 0;
+
   padding: 9px 20px 9px 25px;
 }
 
-.about-link:hover {
+.about-link:hover::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+
   background-color: #ffe17f;
+  transition: 0.5s;
 }
 
 .about-link:focus {
   outline: 2px solid #af4fff;
 }
 
-.about-link:active {
+.about-link:active::before {
   background-color: #ffcc33;
 }
 
@@ -1440,18 +1495,26 @@ body {
 
 .contacts-link {
   display: inline-block;
+
   padding: 9px 30px 9px 35px;
 }
 
-.contacts-link:hover {
+.contacts-link:hover::before {
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
   background-color: #ffe17f;
+
+  transition: 0.5s;
 }
 
 .contacts-link:focus {
   outline: 2px solid #af4fff;
 }
 
-.contacts-link:active {
+.contacts-link:active::before {
   background-color: #ffcc33;
 }
 
@@ -1558,6 +1621,8 @@ body {
 
 .button-mailing:hover {
   background-color: #c4c4c4;
+
+  transition: 0.5s;
 }
 
 .button-mailing:focus {
@@ -1632,6 +1697,8 @@ body {
 
 .logo-footer:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .logo-footer:focus-within {
@@ -1701,6 +1768,8 @@ body {
 
 .footer-link:hover {
   color: #ffc700;
+
+  transition: 0.5s;
 }
 
 .footer-link:hover::before {
@@ -1740,6 +1809,8 @@ body {
 
 .social-link:hover {
   background-color: #ffc700;
+
+  transition: 0.5s;
 }
 
 .social-item:focus-within {
@@ -1778,6 +1849,8 @@ body {
 
 .footer-tel:hover {
   color: #ffc700;
+
+  transition: 0.5s;
 }
 
 .footer-tel:focus-within {
@@ -1797,6 +1870,8 @@ body {
 
 .footer-academy:hover {
   color: #ffffff;
+
+  transition: 0.5s;
 }
 
 .footer-academy:focus-within {
@@ -1868,6 +1943,8 @@ body {
 
 .breadcrumbs-link:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .breadcrumbs-link:focus-within {
@@ -1980,6 +2057,8 @@ body {
 .range-toggle:hover {
   background-color: #ebebeb;
   border: 2px solid #cccccc;
+
+  transition: 0.5s;
 }
 
 .range-toggle::before {
@@ -2152,20 +2231,22 @@ body {
     left: 0;
 }
 
-.filter-button:hover::before,
-.filter-button:active::before {
-  display: none;
-}
+.filter-button:hover::before {
+  top: 0;
 
-.filter-button:hover {
+  width: 100%;
+  height: 100%;
+
   background-color: #ffe17f;
+
+  transition: 0.5s;
 }
 
 .filter-button:focus {
   outline: 2px solid #af4fff;
 }
 
-.filter-button:active {
+.filter-button:active::before {
   background-color: #ffcc33;
 }
 
@@ -2207,6 +2288,8 @@ body {
 
 .sorting-select:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .sorting-select:focus-within {
@@ -2319,6 +2402,8 @@ body {
 
 .sorting-link:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .sorting-item:hover .detailed-link,
@@ -2380,20 +2465,22 @@ body {
   padding: 9px 34px 9px 40px;
 }
 
-.detailed-link:hover::before,
-.detailed-link:active::before {
-  display: none;
-}
+.detailed-link:hover::before {
+  top: 0;
 
-.detailed-link:hover {
+  width: 100%;
+  height: 100%;
+
   background-color: #ffe17f;
+
+  transition: 0.5s;
 }
 
 .detailed-link:focus-within {
   outline: 2px solid #af4fff;
 }
 
-.detailed-link:active {
+.detailed-link:active::before {
   background-color: #ffcc33;
 }
 
@@ -2422,6 +2509,8 @@ body {
 
 .upload-link:hover {
   border-color: #000000;
+
+  transition: 0.5s;
 }
 
 .upload-link:focus-within {
@@ -2462,6 +2551,8 @@ body {
 
 .pagination-button:hover {
   background-color: #dcdcdc;
+
+  transition: 0.5s;
 }
 
 .pagination-button:focus-within {
@@ -2503,6 +2594,8 @@ body {
 
 .pagination-link:hover {
   color: rgba(68, 68, 68, 1);
+
+  transition: 0.5s;
 }
 
 .pagination-link:focus-within {
@@ -2570,6 +2663,8 @@ body {
 
 .modal-close-button:hover {
   opacity: 0.6;
+
+  transition: 0.5s;
 }
 
 .modal-close-button:focus-within {
@@ -2662,6 +2757,8 @@ body {
 
 .modal-input:hover {
   background-color: #dcdcdc;
+
+  transition: 0.5s;
 }
 
 .modal-input:focus-within {
@@ -2748,6 +2845,8 @@ body {
 
 .number-button:hover {
   background-color: #ebebeb;
+
+  transition: 0.5s;
 }
 
 .number-button:hover::before {
@@ -2778,20 +2877,22 @@ body {
   padding: 9px 5px 11px 5px;
 }
 
-.modal-button:hover {
-  background-color: #ffe17f;
-}
+.modal-button:hover::before {
+  top: 0;
 
-.modal-button:hover::before,
-.modal-button:active::before {
-  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: #ffe17f;
+
+  transition: 0.5s;
 }
 
 .modal-button:focus {
   outline: 2px solid #af4fff;
 }
 
-.modal-button:active {
+.modal-button:active::before {
   background-color: #ffcc33;
 }
 
@@ -2819,6 +2920,8 @@ body {
 
 .tooltip-toggle:hover {
   opacity: 0.8;
+
+  transition: 0.5s;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
