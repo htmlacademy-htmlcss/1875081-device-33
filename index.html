@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
@@ -426,5 +428,62 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL -->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title main-title">Доставка под заказ</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-wrapper">
+              <div class="field-group field-group-data">
+                <p class="input-name">
+                  <label class="input-label" for="name">Ваше имя:</label>
+                  <input class="modal-input modal-input-name" type="text" name="name" id="name" placeholder="Введите имя" required>
+                </p>
+                <p class="input-name">
+                  <label class="input-label" for="email">Ваш e-mail:</label>
+                  <input class="modal-input modal-input-email error-modal-input" type="email" id="email" name="email" value="почта" placeholder="Введите e-mail" required>
+                  <span class="error-text">Забавный у вас адрес</span>
+                </p>
+              </div>
+
+              <div class="field-group field-group-inform">
+                <p class="input-name">
+                  <label class="input-label" for="delivery">Что нужно привезти:</label>
+                  <input class="modal-input" type="text" name="delivery" id="delivery" placeholder="В свободной форме" required>
+                </p>
+                <p class="input-name">
+                  <span class="input-label input-label-wrapper">
+                    <label class="input-label-name" for="number-product">Количество:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка тултипа.">
+                          <path d="M2 0H0V2H2V0Z" fill="black"/>
+                          <path d="M2 4H0V12H2V4Z" fill="black"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</span>
+                    </span>
+                  </span>
+                  <input class="modal-input modal-input-number" type="number" id="number-product" name="number" min="1" max="10" value="1" required>
+                  <button class="number-button number-remove">
+                    <span class="visually-hidden">Увеличить количество.</span>
+                  </button>
+                  <button class="number-button number-add">
+                    <span class="visually-hidden">Уменьшить количество.</span>
+                  </button>
+                </p>
+              </div>
+
+              <button class="button modal-button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
