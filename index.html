@@ -456,7 +456,7 @@
                   <label class="input-label" for="delivery">Что нужно привезти:</label>
                   <input class="modal-input" type="text" name="delivery" id="delivery" placeholder="В свободной форме" required>
                 </p>
-                <p class="input-name">
+                <div class="input-name">
                   <span class="input-label input-label-wrapper">
                     <label class="input-label-name" for="number-product">Количество:</label>
                     <span class="tooltip">
@@ -469,14 +469,16 @@
                       <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> к провозу багажа.</span>
                     </span>
                   </span>
-                  <input class="modal-input modal-input-number" type="number" id="number-product" name="number" min="1" max="10" value="1" required>
-                  <button class="number-button number-remove">
-                    <span class="visually-hidden">Увеличить количество.</span>
-                  </button>
-                  <button class="number-button number-add">
-                    <span class="visually-hidden">Уменьшить количество.</span>
-                  </button>
-                </p>
+                  <div class="wrapper-number-input">
+                    <button class="number-button number-remove">
+                      <span class="visually-hidden">Увеличить количество.</span>
+                    </button>
+                    <input class="modal-input modal-input-number" type="number" id="number-product" name="number" min="1" max="10" value="1" required>
+                    <button class="number-button number-add">
+                      <span class="visually-hidden">Уменьшить количество.</span>
+                    </button>
+                  </div>
+                </div>
               </div>
 
               <button class="button modal-button" type="submit">Отправить</button>
