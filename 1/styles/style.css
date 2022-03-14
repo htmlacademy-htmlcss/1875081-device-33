@@ -32,7 +32,6 @@ body {
   min-width: 1440px;
   min-height: 100%;
   margin: 0;
-  padding: 0 40px;
 
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
@@ -65,16 +64,18 @@ body {
 .container {
   width: 1160px;
   margin: 0 auto;
+
+  padding: 0 40px;
 }
 
 /* HEADER */
-.header {
+.header-wrapper {
   display: flex;
   background-color: #ffe17f;
   margin-top: 40px;
 }
 
-.main-header {
+.header-main {
   padding-bottom: 114px;
 }
 
@@ -924,9 +925,14 @@ body {
 }
 
 .control-buttons {
+  position: absolute;
+  bottom: 175px;
+  right: 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 76px;
 }
 
@@ -1449,7 +1455,7 @@ body {
   background-color: #ffcc33;
 }
 
-.adress-block {
+.address-block {
   width: 514px;
 }
 
@@ -1542,7 +1548,7 @@ body {
 }
 
 .mailing-text {
-  width: 560px;
+  width: 555px;
   margin: 0;
   padding-top: 10px;
 }
@@ -1671,7 +1677,7 @@ body {
   align-items: flex-start;
 }
 
-.footer-adress {
+.footer-address {
   position: relative;
 
   width: 239px;
@@ -1679,7 +1685,7 @@ body {
   padding-bottom: 61px;
 }
 
-.footer-adress::after {
+.footer-address::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1714,7 +1720,7 @@ body {
   outline: none;
 }
 
-.footer-adress-text {
+.footer-address-text {
   margin: 0;
   margin-bottom: 10px;
 
@@ -1790,8 +1796,13 @@ body {
 .footer-social {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 150px;
   margin-left: 154px;
+}
+
+.social-item {
+  margin-bottom: 5px;
 }
 
 .social-link {
@@ -2255,12 +2266,12 @@ body {
 .sorting-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
+  padding: 13px 40px;
 }
 
 .sorting-title {
   margin: 0;
+  margin-right: 190px;
 
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -2308,6 +2319,7 @@ body {
 .sorting-buttons {
   display: flex;
   align-items: center;
+  margin-left: auto;
   width: 60px;
 }
 
