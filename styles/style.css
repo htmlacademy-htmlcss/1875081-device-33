@@ -2637,9 +2637,9 @@ body {
   background-color: rgba(240, 240, 240, 0.9);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -2743,7 +2743,7 @@ body {
 
 .modal-input {
   box-sizing: border-box;
-  padding: 20px 45px 20px 20px;
+  padding: 18px 43px 18px 18px;
 
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
@@ -2751,7 +2751,7 @@ body {
   color: #000000;
 
   background-color: #f0f0f0;
-  border: none;
+  border: 2px solid transparent;
   outline: none;
 
   cursor: pointer;
@@ -2771,12 +2771,9 @@ body {
 
 .modal-input:hover {
   background-color: #dcdcdc;
-
-  transition-duration: 0.3s;
 }
 
 .modal-input:focus-within {
-  z-index: 1;
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -2785,9 +2782,16 @@ body {
   opacity: 0.3;
 }
 
+.modal-input:not(:placeholder-shown):invalid {
+  border-color:#ff3d3d;
+
+  z-index: 1;
+}
+
 .error-modal-input {
-  outline: 2px solid #ff3d3d;
-  outline-offset: -2px;
+  border-color:#ff3d3d;
+
+  z-index: 1;
 }
 
 .error-text {
@@ -2816,22 +2820,32 @@ body {
 }
 
 .modal-input-number {
-  width: 60px;
-  padding: 20px 25px;
+  padding: 18px 60px;
 
   text-align: center;
 }
 
 .number-button {
-  position: relative;
+  position: absolute;
 
   width: 60px;
+  min-height: 60px;
   padding: 20px 25px;
 
   background-color: #f0f0f0;
   border: none;
 
   cursor: pointer;
+}
+
+.number-remove {
+  bottom: 0;
+  left: 0;
+}
+
+.number-add {
+  bottom: 0;
+  right: 0;
 }
 
 .number-button::before {
@@ -2859,8 +2873,6 @@ body {
 
 .number-button:hover {
   background-color: #ebebeb;
-
-  transition-duration: 0.3s;
 }
 
 .number-button:hover::before {
@@ -2870,6 +2882,7 @@ body {
 .number-button:focus-within {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+  z-index: 1;
 }
 
 .number-button:active {
