@@ -2834,7 +2834,7 @@ body {
 }
 
 .modal-inform-text {
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
