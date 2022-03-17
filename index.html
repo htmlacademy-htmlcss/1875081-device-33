@@ -64,7 +64,7 @@
                         <span class="number">Товаров: 2</span>
                         <span class="price">Сумма: 2000 ₽</span>
                       </div>
-                      <button class="popover-button-open">Открыть корзину</button>
+                      <a class="popover-button-open" href="#">Открыть корзину</a>
                     </div>
                   </li>
                 </ul>
@@ -207,17 +207,11 @@
             </li>
           </ol>
 
-          <ul class="control-buttons reset-list">
-            <li class="control-byttons-item">
-              <button class="control-button control-button-current" type="button" aria-label="Первый слайд."></button>
-            </li>
-            <li class="control-byttons-item">
-              <button class="control-button" type="button" aria-label="Второй слайд."></button>
-            </li>
-            <li class="control-byttons-item">
-              <button class="control-button" type="button" aria-label="Третий слайд."></button>
-            </li>
-          </ul>
+          <div class="control-buttons">
+            <button class="control-button control-button-current" type="button" aria-label="Первый слайд."></button>
+            <button class="control-button" type="button" aria-label="Второй слайд."></button>
+            <button class="control-button" type="button" aria-label="Третий слайд."></button>
+          </div>
         </div>
       </section>
       <!-- CATEGORIES -->
@@ -406,7 +400,7 @@
           </ul>
         </div>
         <div class="footer-contacts">
-          <a class="footer-tel" href="tel+78128121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="footer-tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="footer-academy"  href="https://htmlacademy.ru/" target="_blank">
             <span class="visually-hidden">Перейти на сайт HTML Academy.</span>
             <svg width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логотип HTML Academy.">
@@ -446,7 +440,7 @@
                 <p class="input-name">
                   <label class="input-label" for="email">Ваш e-mail:</label>
                   <input class="modal-input modal-input-email" type="email" id="email" name="email" value="почта" placeholder="Введите e-mail" required>
-                  <span class="error-text">Забавный у вас адрес</span>
+                  <span class="modal-inform-text">Забавный у вас адрес</span>
                 </p>
               </div>
 
